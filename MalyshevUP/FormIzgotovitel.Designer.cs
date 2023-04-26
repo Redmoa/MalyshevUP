@@ -310,6 +310,7 @@
             this.buttonProdaja.TabIndex = 4;
             this.buttonProdaja.Text = "Продажа мебели";
             this.buttonProdaja.UseVisualStyleBackColor = true;
+            this.buttonProdaja.Click += new System.EventHandler(this.buttonProdaja_Click);
             // 
             // buttonBackTo
             // 

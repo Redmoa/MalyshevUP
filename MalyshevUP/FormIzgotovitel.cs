@@ -48,5 +48,12 @@ namespace MalyshevUP
             frm2.Show();
             this.Hide();
         }
+
+        private void buttonProdaja_Click(object sender, EventArgs e)
+        {
+            Prodaja frm3 = new Prodaja();
+            frm3.Show();
+            this.Hide();
+        }
     }
 }
