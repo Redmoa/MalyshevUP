@@ -83,9 +83,10 @@
             this.датаначалаDataGridViewTextBoxColumn,
             this.датаокончанияDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.производствоBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 289);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 311);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(634, 162);
             this.dataGridView1.TabIndex = 0;
             // 
             // кодпроизводстваDataGridViewTextBoxColumn
@@ -147,9 +148,10 @@
             this.суммаDataGridViewTextBoxColumn,
             this.статусDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.продажиBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(611, 31);
+            this.dataGridView2.Location = new System.Drawing.Point(713, 33);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(743, 408);
+            this.dataGridView2.Size = new System.Drawing.Size(867, 439);
             this.dataGridView2.TabIndex = 1;
             // 
             // кодпродажиDataGridViewTextBoxColumn
@@ -214,9 +216,10 @@
             this.количествоDataGridViewTextBoxColumn1,
             this.датапоступленияDataGridViewTextBoxColumn});
             this.dataGridView3.DataSource = this.складBindingSource;
-            this.dataGridView3.Location = new System.Drawing.Point(12, 31);
+            this.dataGridView3.Location = new System.Drawing.Point(14, 33);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(543, 150);
+            this.dataGridView3.Size = new System.Drawing.Size(634, 162);
             this.dataGridView3.TabIndex = 2;
             // 
             // кодтовараDataGridViewTextBoxColumn
@@ -255,9 +258,10 @@
             // labelSklad
             // 
             this.labelSklad.AutoSize = true;
-            this.labelSklad.Location = new System.Drawing.Point(12, 15);
+            this.labelSklad.Location = new System.Drawing.Point(14, 16);
+            this.labelSklad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSklad.Name = "labelSklad";
-            this.labelSklad.Size = new System.Drawing.Size(121, 13);
+            this.labelSklad.Size = new System.Drawing.Size(132, 14);
             this.labelSklad.TabIndex = 3;
             this.labelSklad.Text = "Поступление на склад";
             // 
@@ -265,9 +269,10 @@
             // 
             this.labelProizvodstvo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelProizvodstvo.AutoSize = true;
-            this.labelProizvodstvo.Location = new System.Drawing.Point(12, 273);
+            this.labelProizvodstvo.Location = new System.Drawing.Point(14, 294);
+            this.labelProizvodstvo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelProizvodstvo.Name = "labelProizvodstvo";
-            this.labelProizvodstvo.Size = new System.Drawing.Size(121, 13);
+            this.labelProizvodstvo.Size = new System.Drawing.Size(132, 14);
             this.labelProizvodstvo.TabIndex = 3;
             this.labelProizvodstvo.Text = "Производство мебели";
             // 
@@ -275,17 +280,19 @@
             // 
             this.labelProdaji.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelProdaji.AutoSize = true;
-            this.labelProdaji.Location = new System.Drawing.Point(608, 15);
+            this.labelProdaji.Location = new System.Drawing.Point(709, 16);
+            this.labelProdaji.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelProdaji.Name = "labelProdaji";
-            this.labelProdaji.Size = new System.Drawing.Size(53, 13);
+            this.labelProdaji.Size = new System.Drawing.Size(59, 14);
             this.labelProdaji.TabIndex = 3;
             this.labelProdaji.Text = "Продажи";
             // 
             // buttonSklad
             // 
-            this.buttonSklad.Location = new System.Drawing.Point(12, 188);
+            this.buttonSklad.Location = new System.Drawing.Point(14, 202);
+            this.buttonSklad.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonSklad.Name = "buttonSklad";
-            this.buttonSklad.Size = new System.Drawing.Size(220, 23);
+            this.buttonSklad.Size = new System.Drawing.Size(257, 25);
             this.buttonSklad.TabIndex = 4;
             this.buttonSklad.Text = "Новое поступление комплектующих";
             this.buttonSklad.UseVisualStyleBackColor = true;
@@ -294,9 +301,10 @@
             // buttonProizvodstvo
             // 
             this.buttonProizvodstvo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonProizvodstvo.Location = new System.Drawing.Point(12, 445);
+            this.buttonProizvodstvo.Location = new System.Drawing.Point(14, 479);
+            this.buttonProizvodstvo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonProizvodstvo.Name = "buttonProizvodstvo";
-            this.buttonProizvodstvo.Size = new System.Drawing.Size(220, 23);
+            this.buttonProizvodstvo.Size = new System.Drawing.Size(257, 25);
             this.buttonProizvodstvo.TabIndex = 4;
             this.buttonProizvodstvo.Text = "Изготовление новой мебели";
             this.buttonProizvodstvo.UseVisualStyleBackColor = true;
@@ -305,9 +313,10 @@
             // buttonProdaja
             // 
             this.buttonProdaja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonProdaja.Location = new System.Drawing.Point(611, 445);
+            this.buttonProdaja.Location = new System.Drawing.Point(713, 479);
+            this.buttonProdaja.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonProdaja.Name = "buttonProdaja";
-            this.buttonProdaja.Size = new System.Drawing.Size(220, 23);
+            this.buttonProdaja.Size = new System.Drawing.Size(257, 25);
             this.buttonProdaja.TabIndex = 4;
             this.buttonProdaja.Text = "Продажа мебели";
             this.buttonProdaja.UseVisualStyleBackColor = true;
@@ -316,9 +325,10 @@
             // buttonBackTo
             // 
             this.buttonBackTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonBackTo.Location = new System.Drawing.Point(1134, 518);
+            this.buttonBackTo.Location = new System.Drawing.Point(1323, 558);
+            this.buttonBackTo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonBackTo.Name = "buttonBackTo";
-            this.buttonBackTo.Size = new System.Drawing.Size(220, 23);
+            this.buttonBackTo.Size = new System.Drawing.Size(257, 25);
             this.buttonBackTo.TabIndex = 4;
             this.buttonBackTo.Text = "Назад";
             this.buttonBackTo.UseVisualStyleBackColor = true;
@@ -326,9 +336,10 @@
             // 
             // FormIzgotovitel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1366, 553);
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.ClientSize = new System.Drawing.Size(1594, 596);
             this.Controls.Add(this.buttonBackTo);
             this.Controls.Add(this.buttonProdaja);
             this.Controls.Add(this.buttonProizvodstvo);
@@ -339,6 +350,8 @@
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormIzgotovitel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Изготовитель";

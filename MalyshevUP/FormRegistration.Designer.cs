@@ -44,17 +44,19 @@
             // textBoxLogin
             // 
             this.textBoxLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxLogin.Location = new System.Drawing.Point(400, 90);
+            this.textBoxLogin.Location = new System.Drawing.Point(467, 97);
+            this.textBoxLogin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxLogin.Name = "textBoxLogin";
-            this.textBoxLogin.Size = new System.Drawing.Size(121, 20);
+            this.textBoxLogin.Size = new System.Drawing.Size(140, 22);
             this.textBoxLogin.TabIndex = 0;
             // 
             // textBoxPassword
             // 
             this.textBoxPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxPassword.Location = new System.Drawing.Point(400, 132);
+            this.textBoxPassword.Location = new System.Drawing.Point(467, 142);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(121, 20);
+            this.textBoxPassword.Size = new System.Drawing.Size(140, 22);
             this.textBoxPassword.TabIndex = 0;
             // 
             // comboBoxRole
@@ -64,17 +66,19 @@
             this.comboBoxRole.Items.AddRange(new object[] {
             "Покупатель",
             "Изготовитель"});
-            this.comboBoxRole.Location = new System.Drawing.Point(400, 216);
+            this.comboBoxRole.Location = new System.Drawing.Point(467, 233);
+            this.comboBoxRole.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBoxRole.Name = "comboBoxRole";
-            this.comboBoxRole.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxRole.Size = new System.Drawing.Size(140, 22);
             this.comboBoxRole.TabIndex = 1;
             // 
             // buttonRegister
             // 
             this.buttonRegister.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonRegister.Location = new System.Drawing.Point(339, 276);
+            this.buttonRegister.Location = new System.Drawing.Point(396, 297);
+            this.buttonRegister.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(121, 23);
+            this.buttonRegister.Size = new System.Drawing.Size(141, 25);
             this.buttonRegister.TabIndex = 2;
             this.buttonRegister.Text = "Зарегистрировать";
             this.buttonRegister.UseVisualStyleBackColor = true;
@@ -83,9 +87,10 @@
             // buttonBackTo
             // 
             this.buttonBackTo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonBackTo.Location = new System.Drawing.Point(339, 334);
+            this.buttonBackTo.Location = new System.Drawing.Point(396, 360);
+            this.buttonBackTo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonBackTo.Name = "buttonBackTo";
-            this.buttonBackTo.Size = new System.Drawing.Size(121, 23);
+            this.buttonBackTo.Size = new System.Drawing.Size(141, 25);
             this.buttonBackTo.TabIndex = 3;
             this.buttonBackTo.Text = "Назад";
             this.buttonBackTo.UseVisualStyleBackColor = true;
@@ -95,9 +100,10 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(275, 93);
+            this.label1.Location = new System.Drawing.Point(321, 100);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(45, 14);
             this.label1.TabIndex = 4;
             this.label1.Text = "Логин:";
             // 
@@ -105,9 +111,10 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(275, 135);
+            this.label2.Location = new System.Drawing.Point(321, 145);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.Size = new System.Drawing.Size(51, 14);
             this.label2.TabIndex = 4;
             this.label2.Text = "Пароль:";
             // 
@@ -115,18 +122,20 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(275, 219);
+            this.label3.Location = new System.Drawing.Point(321, 236);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(36, 14);
             this.label3.TabIndex = 4;
             this.label3.Text = "Роль:";
             // 
             // buttonClean
             // 
             this.buttonClean.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonClean.Location = new System.Drawing.Point(339, 305);
+            this.buttonClean.Location = new System.Drawing.Point(396, 328);
+            this.buttonClean.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonClean.Name = "buttonClean";
-            this.buttonClean.Size = new System.Drawing.Size(121, 23);
+            this.buttonClean.Size = new System.Drawing.Size(141, 25);
             this.buttonClean.TabIndex = 2;
             this.buttonClean.Text = "Очистить";
             this.buttonClean.UseVisualStyleBackColor = true;
@@ -136,25 +145,28 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(275, 176);
+            this.label4.Location = new System.Drawing.Point(321, 190);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 13);
+            this.label4.Size = new System.Drawing.Size(113, 14);
             this.label4.TabIndex = 4;
             this.label4.Text = "Повторите пароль:";
             // 
             // textBoxAgain
             // 
             this.textBoxAgain.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxAgain.Location = new System.Drawing.Point(400, 173);
+            this.textBoxAgain.Location = new System.Drawing.Point(467, 186);
+            this.textBoxAgain.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxAgain.Name = "textBoxAgain";
-            this.textBoxAgain.Size = new System.Drawing.Size(121, 20);
+            this.textBoxAgain.Size = new System.Drawing.Size(140, 22);
             this.textBoxAgain.TabIndex = 0;
             // 
             // FormRegistration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.ClientSize = new System.Drawing.Size(933, 485);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -166,6 +178,8 @@
             this.Controls.Add(this.textBoxAgain);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxLogin);
+            this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormRegistration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Регистрация";

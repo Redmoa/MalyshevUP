@@ -70,10 +70,11 @@
             this.ценаDataGridViewTextBoxColumn,
             this.наличиеDataGridViewCheckBoxColumn});
             this.dataGridView1.DataSource = this.мебелиBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(47, 85);
+            this.dataGridView1.Location = new System.Drawing.Point(55, 92);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(703, 217);
+            this.dataGridView1.Size = new System.Drawing.Size(820, 234);
             this.dataGridView1.TabIndex = 0;
             // 
             // кодмебелиDataGridViewTextBoxColumn
@@ -127,17 +128,19 @@
             // 
             // textBoxFind
             // 
-            this.textBoxFind.Location = new System.Drawing.Point(181, 52);
+            this.textBoxFind.Location = new System.Drawing.Point(211, 56);
+            this.textBoxFind.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxFind.Name = "textBoxFind";
-            this.textBoxFind.Size = new System.Drawing.Size(121, 20);
+            this.textBoxFind.Size = new System.Drawing.Size(140, 22);
             this.textBoxFind.TabIndex = 1;
             // 
             // buttonToOrder
             // 
             this.buttonToOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonToOrder.Location = new System.Drawing.Point(226, 311);
+            this.buttonToOrder.Location = new System.Drawing.Point(264, 335);
+            this.buttonToOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonToOrder.Name = "buttonToOrder";
-            this.buttonToOrder.Size = new System.Drawing.Size(121, 23);
+            this.buttonToOrder.Size = new System.Drawing.Size(141, 25);
             this.buttonToOrder.TabIndex = 3;
             this.buttonToOrder.Text = "Заказать мебель";
             this.buttonToOrder.UseVisualStyleBackColor = true;
@@ -146,9 +149,10 @@
             // radioButtonCheck
             // 
             this.radioButtonCheck.AutoSize = true;
-            this.radioButtonCheck.Location = new System.Drawing.Point(321, 53);
+            this.radioButtonCheck.Location = new System.Drawing.Point(374, 57);
+            this.radioButtonCheck.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.radioButtonCheck.Name = "radioButtonCheck";
-            this.radioButtonCheck.Size = new System.Drawing.Size(76, 17);
+            this.radioButtonCheck.Size = new System.Drawing.Size(84, 18);
             this.radioButtonCheck.TabIndex = 4;
             this.radioButtonCheck.TabStop = true;
             this.radioButtonCheck.Text = "В наличии";
@@ -158,9 +162,10 @@
             // radioButtonUncheck
             // 
             this.radioButtonUncheck.AutoSize = true;
-            this.radioButtonUncheck.Location = new System.Drawing.Point(403, 53);
+            this.radioButtonUncheck.Location = new System.Drawing.Point(470, 57);
+            this.radioButtonUncheck.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.radioButtonUncheck.Name = "radioButtonUncheck";
-            this.radioButtonUncheck.Size = new System.Drawing.Size(97, 17);
+            this.radioButtonUncheck.Size = new System.Drawing.Size(105, 18);
             this.radioButtonUncheck.TabIndex = 4;
             this.radioButtonUncheck.TabStop = true;
             this.radioButtonUncheck.Text = "Нет в наличии";
@@ -170,9 +175,10 @@
             // radioButtonViewAll
             // 
             this.radioButtonViewAll.AutoSize = true;
-            this.radioButtonViewAll.Location = new System.Drawing.Point(506, 53);
+            this.radioButtonViewAll.Location = new System.Drawing.Point(590, 57);
+            this.radioButtonViewAll.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.radioButtonViewAll.Name = "radioButtonViewAll";
-            this.radioButtonViewAll.Size = new System.Drawing.Size(44, 17);
+            this.radioButtonViewAll.Size = new System.Drawing.Size(45, 18);
             this.radioButtonViewAll.TabIndex = 4;
             this.radioButtonViewAll.TabStop = true;
             this.radioButtonViewAll.Text = "Все";
@@ -182,9 +188,10 @@
             // buttonBackTo
             // 
             this.buttonBackTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonBackTo.Location = new System.Drawing.Point(629, 313);
+            this.buttonBackTo.Location = new System.Drawing.Point(734, 337);
+            this.buttonBackTo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonBackTo.Name = "buttonBackTo";
-            this.buttonBackTo.Size = new System.Drawing.Size(121, 23);
+            this.buttonBackTo.Size = new System.Drawing.Size(141, 25);
             this.buttonBackTo.TabIndex = 5;
             this.buttonBackTo.Text = "Назад";
             this.buttonBackTo.UseVisualStyleBackColor = true;
@@ -194,43 +201,48 @@
             // 
             this.labelKodMebel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelKodMebel.AutoSize = true;
-            this.labelKodMebel.Location = new System.Drawing.Point(44, 316);
+            this.labelKodMebel.Location = new System.Drawing.Point(51, 340);
+            this.labelKodMebel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelKodMebel.Name = "labelKodMebel";
-            this.labelKodMebel.Size = new System.Drawing.Size(114, 13);
+            this.labelKodMebel.Size = new System.Drawing.Size(125, 14);
             this.labelKodMebel.TabIndex = 6;
             this.labelKodMebel.Text = "Введите код мебели:";
             // 
             // textBoxKodMebeli
             // 
             this.textBoxKodMebeli.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBoxKodMebeli.Location = new System.Drawing.Point(179, 313);
+            this.textBoxKodMebeli.Location = new System.Drawing.Point(209, 337);
+            this.textBoxKodMebeli.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxKodMebeli.Name = "textBoxKodMebeli";
-            this.textBoxKodMebeli.Size = new System.Drawing.Size(34, 20);
+            this.textBoxKodMebeli.Size = new System.Drawing.Size(39, 22);
             this.textBoxKodMebeli.TabIndex = 7;
             // 
             // labelKolich
             // 
             this.labelKolich.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelKolich.AutoSize = true;
-            this.labelKolich.Location = new System.Drawing.Point(44, 342);
+            this.labelKolich.Location = new System.Drawing.Point(51, 368);
+            this.labelKolich.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelKolich.Name = "labelKolich";
-            this.labelKolich.Size = new System.Drawing.Size(129, 13);
+            this.labelKolich.Size = new System.Drawing.Size(143, 14);
             this.labelKolich.TabIndex = 6;
             this.labelKolich.Text = "Введите кол-во мебели:";
             // 
             // textBoxKolich
             // 
             this.textBoxKolich.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBoxKolich.Location = new System.Drawing.Point(179, 339);
+            this.textBoxKolich.Location = new System.Drawing.Point(209, 365);
+            this.textBoxKolich.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxKolich.Name = "textBoxKolich";
-            this.textBoxKolich.Size = new System.Drawing.Size(34, 20);
+            this.textBoxKolich.Size = new System.Drawing.Size(39, 22);
             this.textBoxKolich.TabIndex = 7;
             // 
             // buttonFind
             // 
-            this.buttonFind.Location = new System.Drawing.Point(47, 50);
+            this.buttonFind.Location = new System.Drawing.Point(55, 54);
+            this.buttonFind.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonFind.Name = "buttonFind";
-            this.buttonFind.Size = new System.Drawing.Size(121, 23);
+            this.buttonFind.Size = new System.Drawing.Size(141, 25);
             this.buttonFind.TabIndex = 8;
             this.buttonFind.Text = "Поиск";
             this.buttonFind.UseVisualStyleBackColor = true;
@@ -238,9 +250,10 @@
             // 
             // FormPokupatel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.ClientSize = new System.Drawing.Size(933, 485);
             this.Controls.Add(this.buttonFind);
             this.Controls.Add(this.textBoxKolich);
             this.Controls.Add(this.textBoxKodMebeli);
@@ -253,6 +266,8 @@
             this.Controls.Add(this.buttonToOrder);
             this.Controls.Add(this.textBoxFind);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormPokupatel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Покупатель";

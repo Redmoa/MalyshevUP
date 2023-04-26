@@ -30,23 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.mebelnayaMalyshevDataSet1 = new MalyshevUP.MebelnayaMalyshevDataSet1();
-            this.заказыBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.заказыTableAdapter = new MalyshevUP.MebelnayaMalyshevDataSet1TableAdapters.ЗаказыTableAdapter();
             this.кодзаказаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.кодклиентаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.кодмебелиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.количествоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.датазаказаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.статусDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.заказыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mebelnayaMalyshevDataSet1 = new MalyshevUP.MebelnayaMalyshevDataSet1();
+            this.заказыTableAdapter = new MalyshevUP.MebelnayaMalyshevDataSet1TableAdapters.ЗаказыTableAdapter();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.мебелиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.мебелиTableAdapter = new MalyshevUP.MebelnayaMalyshevDataSet1TableAdapters.МебелиTableAdapter();
             this.кодмебелиDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.названиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.описаниеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.наличиеDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.мебелиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.мебелиTableAdapter = new MalyshevUP.MebelnayaMalyshevDataSet1TableAdapters.МебелиTableAdapter();
             this.labelZakazy = new System.Windows.Forms.Label();
             this.labelMebeli = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
@@ -62,8 +62,8 @@
             this.textBoxSum = new System.Windows.Forms.TextBox();
             this.labelSum = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mebelnayaMalyshevDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mebelnayaMalyshevDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.мебелиBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -80,24 +80,11 @@
             this.датазаказаDataGridViewTextBoxColumn,
             this.статусDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.заказыBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 25);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 27);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(905, 162);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // mebelnayaMalyshevDataSet1
-            // 
-            this.mebelnayaMalyshevDataSet1.DataSetName = "MebelnayaMalyshevDataSet1";
-            this.mebelnayaMalyshevDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // заказыBindingSource
-            // 
-            this.заказыBindingSource.DataMember = "Заказы";
-            this.заказыBindingSource.DataSource = this.mebelnayaMalyshevDataSet1;
-            // 
-            // заказыTableAdapter
-            // 
-            this.заказыTableAdapter.ClearBeforeFill = true;
             // 
             // кодзаказаDataGridViewTextBoxColumn
             // 
@@ -136,6 +123,20 @@
             this.статусDataGridViewTextBoxColumn.HeaderText = "Статус";
             this.статусDataGridViewTextBoxColumn.Name = "статусDataGridViewTextBoxColumn";
             // 
+            // заказыBindingSource
+            // 
+            this.заказыBindingSource.DataMember = "Заказы";
+            this.заказыBindingSource.DataSource = this.mebelnayaMalyshevDataSet1;
+            // 
+            // mebelnayaMalyshevDataSet1
+            // 
+            this.mebelnayaMalyshevDataSet1.DataSetName = "MebelnayaMalyshevDataSet1";
+            this.mebelnayaMalyshevDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // заказыTableAdapter
+            // 
+            this.заказыTableAdapter.ClearBeforeFill = true;
+            // 
             // dataGridView2
             // 
             this.dataGridView2.AutoGenerateColumns = false;
@@ -147,19 +148,11 @@
             this.ценаDataGridViewTextBoxColumn,
             this.наличиеDataGridViewCheckBoxColumn});
             this.dataGridView2.DataSource = this.мебелиBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 202);
+            this.dataGridView2.Location = new System.Drawing.Point(14, 218);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(776, 150);
+            this.dataGridView2.Size = new System.Drawing.Size(905, 162);
             this.dataGridView2.TabIndex = 1;
-            // 
-            // мебелиBindingSource
-            // 
-            this.мебелиBindingSource.DataMember = "Мебели";
-            this.мебелиBindingSource.DataSource = this.mebelnayaMalyshevDataSet1;
-            // 
-            // мебелиTableAdapter
-            // 
-            this.мебелиTableAdapter.ClearBeforeFill = true;
             // 
             // кодмебелиDataGridViewTextBoxColumn1
             // 
@@ -191,29 +184,41 @@
             this.наличиеDataGridViewCheckBoxColumn.HeaderText = "Наличие";
             this.наличиеDataGridViewCheckBoxColumn.Name = "наличиеDataGridViewCheckBoxColumn";
             // 
+            // мебелиBindingSource
+            // 
+            this.мебелиBindingSource.DataMember = "Мебели";
+            this.мебелиBindingSource.DataSource = this.mebelnayaMalyshevDataSet1;
+            // 
+            // мебелиTableAdapter
+            // 
+            this.мебелиTableAdapter.ClearBeforeFill = true;
+            // 
             // labelZakazy
             // 
             this.labelZakazy.AutoSize = true;
-            this.labelZakazy.Location = new System.Drawing.Point(12, 9);
+            this.labelZakazy.Location = new System.Drawing.Point(14, 10);
+            this.labelZakazy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelZakazy.Name = "labelZakazy";
-            this.labelZakazy.Size = new System.Drawing.Size(46, 13);
+            this.labelZakazy.Size = new System.Drawing.Size(46, 14);
             this.labelZakazy.TabIndex = 2;
             this.labelZakazy.Text = "Заказы";
             // 
             // labelMebeli
             // 
             this.labelMebeli.AutoSize = true;
-            this.labelMebeli.Location = new System.Drawing.Point(12, 186);
+            this.labelMebeli.Location = new System.Drawing.Point(14, 200);
+            this.labelMebeli.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMebeli.Name = "labelMebeli";
-            this.labelMebeli.Size = new System.Drawing.Size(46, 13);
+            this.labelMebeli.Size = new System.Drawing.Size(49, 14);
             this.labelMebeli.TabIndex = 2;
             this.labelMebeli.Text = "Мебели";
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(712, 359);
+            this.buttonAdd.Location = new System.Drawing.Point(831, 387);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdd.Size = new System.Drawing.Size(88, 25);
             this.buttonAdd.TabIndex = 3;
             this.buttonAdd.Text = "Добавить";
             this.buttonAdd.UseVisualStyleBackColor = true;
@@ -221,9 +226,10 @@
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(712, 415);
+            this.buttonBack.Location = new System.Drawing.Point(831, 447);
+            this.buttonBack.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.Size = new System.Drawing.Size(88, 25);
             this.buttonBack.TabIndex = 3;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = true;
@@ -232,88 +238,99 @@
             // labelKodZ
             // 
             this.labelKodZ.AutoSize = true;
-            this.labelKodZ.Location = new System.Drawing.Point(12, 361);
+            this.labelKodZ.Location = new System.Drawing.Point(14, 389);
+            this.labelKodZ.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelKodZ.Name = "labelKodZ";
-            this.labelKodZ.Size = new System.Drawing.Size(65, 13);
+            this.labelKodZ.Size = new System.Drawing.Size(69, 14);
             this.labelKodZ.TabIndex = 4;
             this.labelKodZ.Text = "Код заказа";
             // 
             // textBoxKodZ
             // 
-            this.textBoxKodZ.Location = new System.Drawing.Point(101, 359);
+            this.textBoxKodZ.Location = new System.Drawing.Point(118, 387);
+            this.textBoxKodZ.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxKodZ.Name = "textBoxKodZ";
-            this.textBoxKodZ.Size = new System.Drawing.Size(100, 20);
+            this.textBoxKodZ.Size = new System.Drawing.Size(116, 22);
             this.textBoxKodZ.TabIndex = 5;
             // 
             // textBoxKodM
             // 
-            this.textBoxKodM.Location = new System.Drawing.Point(101, 385);
+            this.textBoxKodM.Location = new System.Drawing.Point(118, 415);
+            this.textBoxKodM.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxKodM.Name = "textBoxKodM";
-            this.textBoxKodM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxKodM.Size = new System.Drawing.Size(116, 22);
             this.textBoxKodM.TabIndex = 7;
             // 
             // labelKodM
             // 
             this.labelKodM.AutoSize = true;
-            this.labelKodM.Location = new System.Drawing.Point(12, 387);
+            this.labelKodM.Location = new System.Drawing.Point(14, 417);
+            this.labelKodM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelKodM.Name = "labelKodM";
-            this.labelKodM.Size = new System.Drawing.Size(67, 13);
+            this.labelKodM.Size = new System.Drawing.Size(74, 14);
             this.labelKodM.TabIndex = 6;
             this.labelKodM.Text = "Код мебели";
             // 
             // textBoxKolvoM
             // 
-            this.textBoxKolvoM.Location = new System.Drawing.Point(101, 411);
+            this.textBoxKolvoM.Location = new System.Drawing.Point(118, 443);
+            this.textBoxKolvoM.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxKolvoM.Name = "textBoxKolvoM";
-            this.textBoxKolvoM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxKolvoM.Size = new System.Drawing.Size(116, 22);
             this.textBoxKolvoM.TabIndex = 9;
             // 
             // labelKolvoM
             // 
             this.labelKolvoM.AutoSize = true;
-            this.labelKolvoM.Location = new System.Drawing.Point(12, 413);
+            this.labelKolvoM.Location = new System.Drawing.Point(14, 445);
+            this.labelKolvoM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelKolvoM.Name = "labelKolvoM";
-            this.labelKolvoM.Size = new System.Drawing.Size(82, 13);
+            this.labelKolvoM.Size = new System.Drawing.Size(92, 14);
             this.labelKolvoM.TabIndex = 8;
             this.labelKolvoM.Text = "Кол-во мебели";
             // 
             // textBoxCena
             // 
-            this.textBoxCena.Location = new System.Drawing.Point(302, 358);
+            this.textBoxCena.Location = new System.Drawing.Point(352, 386);
+            this.textBoxCena.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxCena.Name = "textBoxCena";
-            this.textBoxCena.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCena.Size = new System.Drawing.Size(116, 22);
             this.textBoxCena.TabIndex = 11;
             // 
             // labelCena
             // 
             this.labelCena.AutoSize = true;
-            this.labelCena.Location = new System.Drawing.Point(216, 360);
+            this.labelCena.Location = new System.Drawing.Point(252, 388);
+            this.labelCena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCena.Name = "labelCena";
-            this.labelCena.Size = new System.Drawing.Size(80, 13);
+            this.labelCena.Size = new System.Drawing.Size(86, 14);
             this.labelCena.TabIndex = 10;
             this.labelCena.Text = "Цена за штуку";
             // 
             // textBoxSum
             // 
-            this.textBoxSum.Location = new System.Drawing.Point(302, 385);
+            this.textBoxSum.Location = new System.Drawing.Point(352, 415);
+            this.textBoxSum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxSum.Name = "textBoxSum";
-            this.textBoxSum.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSum.Size = new System.Drawing.Size(116, 22);
             this.textBoxSum.TabIndex = 13;
             // 
             // labelSum
             // 
             this.labelSum.AutoSize = true;
-            this.labelSum.Location = new System.Drawing.Point(216, 386);
+            this.labelSum.Location = new System.Drawing.Point(252, 416);
+            this.labelSum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSum.Name = "labelSum";
-            this.labelSum.Size = new System.Drawing.Size(41, 13);
+            this.labelSum.Size = new System.Drawing.Size(42, 14);
             this.labelSum.TabIndex = 12;
             this.labelSum.Text = "Сумма";
             // 
             // Prodaja
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.ClientSize = new System.Drawing.Size(933, 485);
             this.Controls.Add(this.textBoxSum);
             this.Controls.Add(this.labelSum);
             this.Controls.Add(this.textBoxCena);
@@ -330,12 +347,15 @@
             this.Controls.Add(this.labelZakazy);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Prodaja";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Продажи";
             this.Load += new System.EventHandler(this.Prodaja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mebelnayaMalyshevDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mebelnayaMalyshevDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.мебелиBindingSource)).EndInit();
             this.ResumeLayout(false);
