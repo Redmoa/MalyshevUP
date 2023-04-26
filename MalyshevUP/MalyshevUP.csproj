@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormAutorization.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormAutorization.Designer.cs">
+      <DependentUpon>FormAutorization.cs</DependentUpon>
     </Compile>
     <Compile Include="FormIzgotovitel.cs">
       <SubType>Form</SubType>
@@ -110,8 +110,8 @@
     <Compile Include="Sklad.Designer.cs">
       <DependentUpon>Sklad.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormAutorization.resx">
+      <DependentUpon>FormAutorization.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormIzgotovitel.resx">
       <DependentUpon>FormIzgotovitel.cs</DependentUpon>

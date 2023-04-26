@@ -70,6 +70,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -139,6 +141,9 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -205,6 +210,9 @@
             // 
             // labelMebeli
             // 
+            this.labelMebeli.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelMebeli.AutoSize = true;
             this.labelMebeli.Location = new System.Drawing.Point(14, 200);
             this.labelMebeli.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -215,6 +223,7 @@
             // 
             // buttonAdd
             // 
+            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonAdd.Location = new System.Drawing.Point(831, 387);
             this.buttonAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonAdd.Name = "buttonAdd";
@@ -226,6 +235,7 @@
             // 
             // buttonBack
             // 
+            this.buttonBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonBack.Location = new System.Drawing.Point(831, 447);
             this.buttonBack.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonBack.Name = "buttonBack";
@@ -237,6 +247,7 @@
             // 
             // labelKodZ
             // 
+            this.labelKodZ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelKodZ.AutoSize = true;
             this.labelKodZ.Location = new System.Drawing.Point(14, 389);
             this.labelKodZ.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -247,6 +258,7 @@
             // 
             // textBoxKodZ
             // 
+            this.textBoxKodZ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.textBoxKodZ.Location = new System.Drawing.Point(118, 387);
             this.textBoxKodZ.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxKodZ.Name = "textBoxKodZ";
@@ -255,6 +267,7 @@
             // 
             // textBoxKodM
             // 
+            this.textBoxKodM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.textBoxKodM.Location = new System.Drawing.Point(118, 415);
             this.textBoxKodM.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxKodM.Name = "textBoxKodM";
@@ -263,6 +276,7 @@
             // 
             // labelKodM
             // 
+            this.labelKodM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelKodM.AutoSize = true;
             this.labelKodM.Location = new System.Drawing.Point(14, 417);
             this.labelKodM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -273,6 +287,7 @@
             // 
             // textBoxKolvoM
             // 
+            this.textBoxKolvoM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.textBoxKolvoM.Location = new System.Drawing.Point(118, 443);
             this.textBoxKolvoM.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxKolvoM.Name = "textBoxKolvoM";
@@ -281,6 +296,7 @@
             // 
             // labelKolvoM
             // 
+            this.labelKolvoM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelKolvoM.AutoSize = true;
             this.labelKolvoM.Location = new System.Drawing.Point(14, 445);
             this.labelKolvoM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -291,6 +307,7 @@
             // 
             // textBoxCena
             // 
+            this.textBoxCena.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.textBoxCena.Location = new System.Drawing.Point(352, 386);
             this.textBoxCena.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxCena.Name = "textBoxCena";
@@ -299,6 +316,7 @@
             // 
             // labelCena
             // 
+            this.labelCena.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelCena.AutoSize = true;
             this.labelCena.Location = new System.Drawing.Point(252, 388);
             this.labelCena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -309,6 +327,7 @@
             // 
             // textBoxSum
             // 
+            this.textBoxSum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.textBoxSum.Location = new System.Drawing.Point(352, 415);
             this.textBoxSum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxSum.Name = "textBoxSum";
@@ -317,6 +336,7 @@
             // 
             // labelSum
             // 
+            this.labelSum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelSum.AutoSize = true;
             this.labelSum.Location = new System.Drawing.Point(252, 416);
             this.labelSum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);

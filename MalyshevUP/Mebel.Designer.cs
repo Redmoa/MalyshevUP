@@ -126,7 +126,8 @@
             // 
             // dataGridView2
             // 
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -186,7 +187,9 @@
             // 
             // labelIzgotoviteli
             // 
-            this.labelIzgotoviteli.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelIzgotoviteli.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelIzgotoviteli.AutoSize = true;
             this.labelIzgotoviteli.Location = new System.Drawing.Point(14, 176);
             this.labelIzgotoviteli.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -304,7 +307,7 @@
             // monthCalendar1
             // 
             this.monthCalendar1.Location = new System.Drawing.Point(721, 15);
-            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(10);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 12;
             this.monthCalendar1.Visible = false;
@@ -313,7 +316,7 @@
             // monthCalendar2
             // 
             this.monthCalendar2.Location = new System.Drawing.Point(721, 183);
-            this.monthCalendar2.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.monthCalendar2.Margin = new System.Windows.Forms.Padding(10);
             this.monthCalendar2.Name = "monthCalendar2";
             this.monthCalendar2.TabIndex = 13;
             this.monthCalendar2.Visible = false;
