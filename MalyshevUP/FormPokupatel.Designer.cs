@@ -255,7 +255,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormPokupatel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormPokupatel";
+            this.Text = "Покупатель";
             this.Load += new System.EventHandler(this.FormPokupatel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.мебелиBindingSource)).EndInit();

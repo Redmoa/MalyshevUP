@@ -331,7 +331,7 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Prodaja";
-            this.Text = "Prodaja";
+            this.Text = "Продажи";
             this.Load += new System.EventHandler(this.Prodaja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mebelnayaMalyshevDataSet1)).EndInit();

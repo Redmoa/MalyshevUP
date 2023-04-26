@@ -59,6 +59,9 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -112,6 +115,7 @@
             // 
             // labelKodKomp
             // 
+            this.labelKodKomp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelKodKomp.AutoSize = true;
             this.labelKodKomp.Location = new System.Drawing.Point(509, 284);
             this.labelKodKomp.Name = "labelKodKomp";
@@ -121,6 +125,7 @@
             // 
             // textBoxKodKomp
             // 
+            this.textBoxKodKomp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxKodKomp.Location = new System.Drawing.Point(667, 281);
             this.textBoxKodKomp.Name = "textBoxKodKomp";
             this.textBoxKodKomp.Size = new System.Drawing.Size(121, 20);
@@ -142,6 +147,7 @@
             // 
             // textBoxKolvoKomp
             // 
+            this.textBoxKolvoKomp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxKolvoKomp.Location = new System.Drawing.Point(667, 307);
             this.textBoxKolvoKomp.Name = "textBoxKolvoKomp";
             this.textBoxKolvoKomp.Size = new System.Drawing.Size(121, 20);
@@ -149,6 +155,7 @@
             // 
             // labelNazvKomp
             // 
+            this.labelNazvKomp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelNazvKomp.AutoSize = true;
             this.labelNazvKomp.Location = new System.Drawing.Point(509, 310);
             this.labelNazvKomp.Name = "labelNazvKomp";
@@ -158,6 +165,7 @@
             // 
             // labelDate
             // 
+            this.labelDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelDate.AutoSize = true;
             this.labelDate.Location = new System.Drawing.Point(509, 336);
             this.labelDate.Name = "labelDate";
@@ -167,6 +175,7 @@
             // 
             // buttonAdd
             // 
+            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonAdd.Location = new System.Drawing.Point(713, 360);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 23);
@@ -177,6 +186,7 @@
             // 
             // buttonBack
             // 
+            this.buttonBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonBack.Location = new System.Drawing.Point(713, 415);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
@@ -196,6 +206,7 @@
             // 
             // monthCalendar1
             // 
+            this.monthCalendar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.monthCalendar1.Location = new System.Drawing.Point(592, 25);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 13;
@@ -204,6 +215,7 @@
             // 
             // textBoxDate
             // 
+            this.textBoxDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxDate.Location = new System.Drawing.Point(667, 334);
             this.textBoxDate.Name = "textBoxDate";
             this.textBoxDate.Size = new System.Drawing.Size(121, 20);
@@ -227,7 +239,7 @@
             this.Controls.Add(this.labelKodKomp);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Sklad";
-            this.Text = "Sklad";
+            this.Text = "Поступление на склад";
             this.Load += new System.EventHandler(this.Sklad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mebelnayaMalyshevDataSetDobavlenie)).EndInit();

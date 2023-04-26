@@ -43,7 +43,7 @@
             // 
             // textBoxLogin
             // 
-            this.textBoxLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxLogin.Location = new System.Drawing.Point(400, 90);
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(121, 20);
@@ -51,7 +51,7 @@
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxPassword.Location = new System.Drawing.Point(400, 132);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(121, 20);
@@ -59,7 +59,7 @@
             // 
             // comboBoxRole
             // 
-            this.comboBoxRole.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxRole.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBoxRole.FormattingEnabled = true;
             this.comboBoxRole.Items.AddRange(new object[] {
             "Покупатель",
@@ -71,7 +71,7 @@
             // 
             // buttonRegister
             // 
-            this.buttonRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonRegister.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonRegister.Location = new System.Drawing.Point(339, 276);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(121, 23);
@@ -82,7 +82,7 @@
             // 
             // buttonBackTo
             // 
-            this.buttonBackTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonBackTo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonBackTo.Location = new System.Drawing.Point(339, 334);
             this.buttonBackTo.Name = "buttonBackTo";
             this.buttonBackTo.Size = new System.Drawing.Size(121, 23);
@@ -93,7 +93,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(275, 93);
             this.label1.Name = "label1";
@@ -103,7 +103,7 @@
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(275, 135);
             this.label2.Name = "label2";
@@ -113,7 +113,7 @@
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(275, 219);
             this.label3.Name = "label3";
@@ -123,7 +123,7 @@
             // 
             // buttonClean
             // 
-            this.buttonClean.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonClean.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonClean.Location = new System.Drawing.Point(339, 305);
             this.buttonClean.Name = "buttonClean";
             this.buttonClean.Size = new System.Drawing.Size(121, 23);
@@ -134,7 +134,7 @@
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(275, 176);
             this.label4.Name = "label4";
@@ -144,7 +144,7 @@
             // 
             // textBoxAgain
             // 
-            this.textBoxAgain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxAgain.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxAgain.Location = new System.Drawing.Point(400, 173);
             this.textBoxAgain.Name = "textBoxAgain";
             this.textBoxAgain.Size = new System.Drawing.Size(121, 20);

@@ -67,6 +67,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -83,6 +85,8 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -168,6 +172,8 @@
             // 
             // labelMebeli
             // 
+            this.labelMebeli.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelMebeli.AutoSize = true;
             this.labelMebeli.Location = new System.Drawing.Point(12, 8);
             this.labelMebeli.Name = "labelMebeli";
@@ -177,6 +183,7 @@
             // 
             // labelIzgotoviteli
             // 
+            this.labelIzgotoviteli.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelIzgotoviteli.AutoSize = true;
             this.labelIzgotoviteli.Location = new System.Drawing.Point(12, 163);
             this.labelIzgotoviteli.Name = "labelIzgotoviteli";
@@ -186,6 +193,7 @@
             // 
             // buttonAdd
             // 
+            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonAdd.Location = new System.Drawing.Point(713, 338);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 23);
@@ -196,6 +204,7 @@
             // 
             // buttonBack
             // 
+            this.buttonBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonBack.Location = new System.Drawing.Point(713, 413);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
@@ -206,6 +215,7 @@
             // 
             // labelKodM
             // 
+            this.labelKodM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelKodM.AutoSize = true;
             this.labelKodM.Location = new System.Drawing.Point(15, 341);
             this.labelKodM.Name = "labelKodM";
@@ -215,6 +225,7 @@
             // 
             // textBoxKodM
             // 
+            this.textBoxKodM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.textBoxKodM.Location = new System.Drawing.Point(126, 338);
             this.textBoxKodM.Name = "textBoxKodM";
             this.textBoxKodM.Size = new System.Drawing.Size(100, 20);
@@ -222,6 +233,7 @@
             // 
             // textBoxKodI
             // 
+            this.textBoxKodI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.textBoxKodI.Location = new System.Drawing.Point(126, 364);
             this.textBoxKodI.Name = "textBoxKodI";
             this.textBoxKodI.Size = new System.Drawing.Size(100, 20);
@@ -229,6 +241,7 @@
             // 
             // labelKodI
             // 
+            this.labelKodI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelKodI.AutoSize = true;
             this.labelKodI.Location = new System.Drawing.Point(15, 367);
             this.labelKodI.Name = "labelKodI";
@@ -238,6 +251,7 @@
             // 
             // textBoxDateN
             // 
+            this.textBoxDateN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.textBoxDateN.Location = new System.Drawing.Point(126, 390);
             this.textBoxDateN.Name = "textBoxDateN";
             this.textBoxDateN.Size = new System.Drawing.Size(100, 20);
@@ -246,6 +260,7 @@
             // 
             // labelDateN
             // 
+            this.labelDateN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelDateN.AutoSize = true;
             this.labelDateN.Location = new System.Drawing.Point(15, 393);
             this.labelDateN.Name = "labelDateN";
@@ -255,6 +270,7 @@
             // 
             // textBoxDateO
             // 
+            this.textBoxDateO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.textBoxDateO.Location = new System.Drawing.Point(126, 416);
             this.textBoxDateO.Name = "textBoxDateO";
             this.textBoxDateO.Size = new System.Drawing.Size(100, 20);
@@ -263,6 +279,7 @@
             // 
             // labelDateO
             // 
+            this.labelDateO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelDateO.AutoSize = true;
             this.labelDateO.Location = new System.Drawing.Point(15, 419);
             this.labelDateO.Name = "labelDateO";
@@ -308,7 +325,7 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Mebel";
-            this.Text = "Mebel";
+            this.Text = "Производство мебели";
             this.Load += new System.EventHandler(this.Mebel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
