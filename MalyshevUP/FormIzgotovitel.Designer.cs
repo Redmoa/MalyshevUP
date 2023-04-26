@@ -299,6 +299,7 @@
             this.buttonProizvodstvo.TabIndex = 4;
             this.buttonProizvodstvo.Text = "Изготовление новой мебели";
             this.buttonProizvodstvo.UseVisualStyleBackColor = true;
+            this.buttonProizvodstvo.Click += new System.EventHandler(this.buttonProizvodstvo_Click);
             // 
             // buttonProdaja
             // 

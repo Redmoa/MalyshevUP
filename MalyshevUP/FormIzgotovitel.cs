@@ -41,5 +41,12 @@ namespace MalyshevUP
             frm1.Show();
             this.Hide();
         }
+
+        private void buttonProizvodstvo_Click(object sender, EventArgs e)
+        {
+            Mebel frm2 = new Mebel();
+            frm2.Show();
+            this.Hide();
+        }
     }
 }
