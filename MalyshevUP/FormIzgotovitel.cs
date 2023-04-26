@@ -34,5 +34,12 @@ namespace MalyshevUP
             frm.Show();
             this.Close();
         }
+
+        private void buttonSklad_Click(object sender, EventArgs e)
+        {
+            Sklad frm1 = new Sklad();
+            frm1.Show();
+            this.Hide();
+        }
     }
 }

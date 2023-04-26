@@ -73,6 +73,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -133,6 +134,7 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -260,6 +262,7 @@
             // 
             // labelProizvodstvo
             // 
+            this.labelProizvodstvo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelProizvodstvo.AutoSize = true;
             this.labelProizvodstvo.Location = new System.Drawing.Point(12, 273);
             this.labelProizvodstvo.Name = "labelProizvodstvo";
@@ -269,6 +272,7 @@
             // 
             // labelProdaji
             // 
+            this.labelProdaji.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelProdaji.AutoSize = true;
             this.labelProdaji.Location = new System.Drawing.Point(608, 15);
             this.labelProdaji.Name = "labelProdaji";
@@ -284,9 +288,11 @@
             this.buttonSklad.TabIndex = 4;
             this.buttonSklad.Text = "Новое поступление комплектующих";
             this.buttonSklad.UseVisualStyleBackColor = true;
+            this.buttonSklad.Click += new System.EventHandler(this.buttonSklad_Click);
             // 
             // buttonProizvodstvo
             // 
+            this.buttonProizvodstvo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonProizvodstvo.Location = new System.Drawing.Point(12, 445);
             this.buttonProizvodstvo.Name = "buttonProizvodstvo";
             this.buttonProizvodstvo.Size = new System.Drawing.Size(220, 23);
@@ -296,6 +302,7 @@
             // 
             // buttonProdaja
             // 
+            this.buttonProdaja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonProdaja.Location = new System.Drawing.Point(611, 445);
             this.buttonProdaja.Name = "buttonProdaja";
             this.buttonProdaja.Size = new System.Drawing.Size(220, 23);
@@ -305,6 +312,7 @@
             // 
             // buttonBackTo
             // 
+            this.buttonBackTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonBackTo.Location = new System.Drawing.Point(1134, 518);
             this.buttonBackTo.Name = "buttonBackTo";
             this.buttonBackTo.Size = new System.Drawing.Size(220, 23);
