@@ -18,16 +18,16 @@ namespace MalyshevUP
         {
             InitializeComponent();
         }
-
+        //функция авторизации
         private void buttonEnter_Click(object sender, EventArgs e)
         {
+            //соединение с бд и условия проверки
             SqlConnection con = new SqlConnection(@"Data Source=DaisukiReno;Initial Catalog=MebelnayaMalyshev;Integrated Security=True");
             string query = "SELECT * FROM Пользователи WHERE Логин='" + textBoxLogin.Text + "' and Пароль='" + textBoxPassword.Text + "'";
             con.Open();
 
             SqlCommand cmd = new SqlCommand(query, con);
             SqlDataReader reader = cmd.ExecuteReader();
-
             if (reader.HasRows)
             {
 
@@ -37,7 +37,7 @@ namespace MalyshevUP
                     object Роль = reader.GetValue(3);
                     string User_Role = Роль.ToString();
 
-
+                    //вход к формам, в зависимости от ролей
                     if (User_Role == "Изготовитель")
                     {
                         FormIzgotovitel frm = new FormIzgotovitel();
@@ -63,14 +63,14 @@ namespace MalyshevUP
                 MessageBox.Show("Некорректный логин или пароль", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-            
+        //переход к форме регистрации
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             FormRegistration frm3 = new FormRegistration();
             frm3.Show();
             this.Hide();
         }
-
+        //выход из приложения
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();

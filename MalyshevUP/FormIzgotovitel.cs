@@ -27,28 +27,28 @@ namespace MalyshevUP
             this.производствоTableAdapter.Fill(this.mebelnayaMalyshevDataSetIzgotovitel.Производство);
 
         }
-
+        //назад к форме авторизации
         private void buttonBackTo_Click(object sender, EventArgs e)
         {
             FormAuthorization frm = new FormAuthorization();
             frm.Show();
             this.Close();
         }
-
+        //переход на форму "Склад"
         private void buttonSklad_Click(object sender, EventArgs e)
         {
             Sklad frm1 = new Sklad();
             frm1.Show();
             this.Hide();
         }
-
+        //переход на форму "Производство"
         private void buttonProizvodstvo_Click(object sender, EventArgs e)
         {
             Mebel frm2 = new Mebel();
             frm2.Show();
             this.Hide();
         }
-
+        //переход на форму "Продажи"
         private void buttonProdaja_Click(object sender, EventArgs e)
         {
             Prodaja frm3 = new Prodaja();

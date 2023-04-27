@@ -18,14 +18,14 @@ namespace MalyshevUP
         {
             InitializeComponent();
         }
-
+        //назад к форме авторизации
         private void buttonBackTo_Click(object sender, EventArgs e)
         {
             this.Close();
             FormAuthorization frm = new FormAuthorization();
             frm.Show();
         }
-
+        //функция регистрации
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             if (textBoxLogin.Text != "" && textBoxPassword.Text != "" && textBoxAgain.Text != "" && comboBoxRole.Text != "")
@@ -74,7 +74,7 @@ namespace MalyshevUP
                 MessageBox.Show("Все поля должны быть заполнены!");
             }
         }
-
+        //Очистить поля
         private void buttonClean_Click(object sender, EventArgs e)
         {
             textBoxLogin.Text = "";

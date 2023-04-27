@@ -27,7 +27,7 @@ namespace MalyshevUP
 
         }
 
-
+        //фильтр "В наличии"
         private void radioButtonCheck_CheckedChanged(object sender, EventArgs e)
         {
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
@@ -44,7 +44,7 @@ namespace MalyshevUP
                 }
             }
         }
-
+        //фильтр "Нет в наличии"
         private void radioButtonUncheck_CheckedChanged(object sender, EventArgs e)
         {
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
@@ -61,7 +61,7 @@ namespace MalyshevUP
                 }
             }
         }
-
+        //фильтр "Все"
         private void radioButtonViewAll_CheckedChanged(object sender, EventArgs e)
         {
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
@@ -70,14 +70,14 @@ namespace MalyshevUP
                 dataGridView1.Rows[i].Visible = true;
             }
         }
-
+        //назад к форме авторизации
         private void buttonBackTo_Click(object sender, EventArgs e)
         {
             FormAuthorization frm = new FormAuthorization();
             frm.Show();
             this.Close();
         }
-
+        //добавление записи в таблицу Заказы
         private void buttonToOrder_Click(object sender, EventArgs e)
         {
             string KodMebeli = textBoxKodMebeli.Text.Trim();
@@ -90,7 +90,7 @@ namespace MalyshevUP
             MessageBox.Show("Заказ добавлен!");
             con2.Close();
         }
-
+        //поиск информации в таблице
         private void buttonFind_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < dataGridView1.Rows.Count; i++)

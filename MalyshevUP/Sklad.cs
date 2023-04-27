@@ -27,7 +27,7 @@ namespace MalyshevUP
             this.комплектующиеTableAdapter.Fill(this.mebelnayaMalyshevDataSetDobavlenie.Комплектующие);
 
         }
-
+        //кнопка добавления
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             string KodKomp = textBoxKodKomp.Text.Trim();
@@ -41,18 +41,18 @@ namespace MalyshevUP
             cmd2.ExecuteNonQuery();
             MessageBox.Show("Информация добавлена!");
         }
-
+        //при нажатии на текстбокс должен открыться календарь
         private void textBoxDate_Enter(object sender, EventArgs e)
         {
             monthCalendar1.Show();
         }
-
+        //выбор даты через календарь
         private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
         {
             textBoxDate.Text = monthCalendar1.SelectionStart.ToString("yyyy-MM-dd");
             monthCalendar1.Hide();
         }
-
+        //назад к форме изготовителя
         private void buttonBack_Click(object sender, EventArgs e)
         {
             FormIzgotovitel frm = new FormIzgotovitel();

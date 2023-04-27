@@ -27,7 +27,7 @@ namespace MalyshevUP
             this.мебелиTableAdapter.Fill(this.mebelnayaMalyshevDataSet1.Мебели);
 
         }
-
+        //добавление записи в таблицу производство
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             string KodM = textBoxKodM.Text.Trim();
@@ -42,29 +42,29 @@ namespace MalyshevUP
             cmd2.ExecuteNonQuery();
             MessageBox.Show("Информация добавлена!");
         }
-
+        //открывает календарь по нажатию на текстбокс
         private void textBoxDateN_Enter(object sender, EventArgs e)
         {
             monthCalendar1.Show();
         }
-
+        //открывает календарь по нажатию на текстбокс
         private void textBoxDateO_Enter(object sender, EventArgs e)
         {
             monthCalendar2.Show();
         }
-
+        //ввод даты через календарь
         private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
         {
             textBoxDateN.Text = monthCalendar1.SelectionStart.ToString("yyyy-MM-dd");
             monthCalendar1.Hide();
         }
-
+        //ввод даты через календарь
         private void monthCalendar2_DateSelected(object sender, DateRangeEventArgs e)
         {
             textBoxDateO.Text = monthCalendar2.SelectionStart.ToString("yyyy-MM-dd");
             monthCalendar2.Hide();
         }
-
+        //назад к форме изготовителя
         private void buttonBack_Click(object sender, EventArgs e)
         {
             FormIzgotovitel frm = new FormIzgotovitel();

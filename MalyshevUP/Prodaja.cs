@@ -26,7 +26,7 @@ namespace MalyshevUP
             this.заказыTableAdapter.Fill(this.mebelnayaMalyshevDataSet1.Заказы);
 
         }
-
+        //добавление записи в таблицу Продажи
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             string KodZ = textBoxKodZ.Text.Trim();
@@ -42,7 +42,7 @@ namespace MalyshevUP
             cmd2.ExecuteNonQuery();
             MessageBox.Show("Информация добавлена!");
         }
-
+        //назад к форме изготовителя
         private void buttonBack_Click(object sender, EventArgs e)
         {
             FormIzgotovitel frm = new FormIzgotovitel();
