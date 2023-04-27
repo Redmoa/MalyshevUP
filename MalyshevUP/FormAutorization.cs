@@ -17,6 +17,7 @@ namespace MalyshevUP
         public FormAuthorization()
         {
             InitializeComponent();
+            textBoxPassword.PasswordChar= '*';
         }
         //функция авторизации
         private void buttonEnter_Click(object sender, EventArgs e)
@@ -74,6 +75,11 @@ namespace MalyshevUP
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void FormAuthorization_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

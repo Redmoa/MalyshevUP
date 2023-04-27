@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Text.RegularExpressions;
 
 namespace MalyshevUP
 {
@@ -32,12 +33,13 @@ namespace MalyshevUP
             {
                 if (textBoxAgain.Text == textBoxPassword.Text)
                 {
-                    if (textBoxPassword.Text.Length >= 6 && textBoxAgain.Text.Length >= 6)
-                    {
-                        string userLogin = textBoxLogin.Text.Trim();
-                        string userPass = textBoxPassword.Text.Trim();
-                        string userRole = comboBoxRole.Text.Trim();
+                    string userLogin = textBoxLogin.Text.Trim();
+                    string userPass = textBoxPassword.Text.Trim();
+                    string userRole = comboBoxRole.Text.Trim();
 
+                    // Проверяем пароль
+                    if (CheckPassword(userPass))
+                    {
                         SqlConnection con1 = new SqlConnection(@"Data Source=DaisukiReno;Initial Catalog=MebelnayaMalyshev;Integrated Security=True");
                         string query = "SELECT * FROM Пользователи WHERE Логин = '" + userLogin + "'";
                         con1.Open();
@@ -61,7 +63,7 @@ namespace MalyshevUP
                     }
                     else
                     {
-                        MessageBox.Show("Пароль должен иметь длину меньше или равно 6 символов!");
+                        MessageBox.Show("Пароль должен содержать минимум 6 символов, включая как минимум 1 прописную букву, 1 цифру и 1 символ из набора: ! @ # $ % ^.");
                     }
                 }
                 else
@@ -82,6 +84,26 @@ namespace MalyshevUP
             textBoxAgain.Text = "";
             comboBoxRole.Text = "";
         }
-        
+
+        private bool CheckPassword(string password)
+        {
+            // Проверяем длину пароля
+            if (password.Length < 6)
+                return false;
+
+            // Проверяем наличие прописных букв
+            if (!Regex.IsMatch(password, "[A-Z]"))
+                return false;
+
+            // Проверяем наличие цифр
+            if (!Regex.IsMatch(password, "[0-9]"))
+                return false;
+
+            // Проверяем наличие специальных символов
+            if (!Regex.IsMatch(password, "[!@#$%^]"))
+                return false;
+
+            return true;
+        }
     }
 }
