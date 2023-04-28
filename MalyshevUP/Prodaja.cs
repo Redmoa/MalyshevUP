@@ -37,7 +37,7 @@ namespace MalyshevUP
                 // Получаем цену мебели по ее коду из таблицы "Мебель"
                 float furniturePrice = GetFurniturePrice(furnitureCode);
                 // Вычисляем количество мебели, проданной в текущей продаже
-                int quantity = GetFurnitureQuantity(furnitureCode);
+                int quantity = GetFurnitureQuantity(orderCode);
                 // Вычисляем общую стоимость продажи
                 float saleAmount = quantity * furniturePrice;
                 // Получаем дату продажи
@@ -114,17 +114,18 @@ namespace MalyshevUP
             using (SqlConnection connection = new SqlConnection(@"Data Source=DaisukiReno;Initial Catalog=MebelnayaMalyshev;Integrated Security=True"))
             {
                 connection.Open();
-                string query = "SELECT Код_мебели FROM Заказы";
+                string query = "SELECT Код_мебели FROM Заказы WHERE Код_заказа = @OrderCode";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
+                    command.Parameters.AddWithValue("@OrderCode", orderCode);
                     object result = command.ExecuteScalar();
                     if (result != DBNull.Value && result != null)
                     {
-                        return Convert.ToInt32(result) + 1;
+                        return Convert.ToInt32(result);
                     }
                     else
                     {
-                        return 1;
+                        throw new Exception("Код мебели не найден");
                     }
                 }
             }
@@ -152,15 +153,15 @@ namespace MalyshevUP
             }
         }
 
-        private int GetFurnitureQuantity(int furnitureCode)
+        private int GetFurnitureQuantity(int orderCode)
         {
             using (SqlConnection connection = new SqlConnection(@"Data Source=DaisukiReno;Initial Catalog=MebelnayaMalyshev;Integrated Security=True"))
             {
                 connection.Open();
-                string query = "SELECT Количество FROM Заказы WHERE Код_мебели = @FurnitureCode";
+                string query = "SELECT Количество FROM Заказы WHERE Код_заказа = @orderCode";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@FurnitureCode", furnitureCode);
+                    command.Parameters.AddWithValue("@orderCode", orderCode);
                     object result = command.ExecuteScalar();
                     if (result != DBNull.Value && result != null)
                     {

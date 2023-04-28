@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.Security.Principal;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using MalyshevUP.Properties;
+using System.Collections;
 
 namespace MalyshevUP
 {
@@ -86,36 +87,68 @@ namespace MalyshevUP
         {
             if (textBoxKodMebeli.Text != "" && textBoxKolich.Text != "")
             {
-                
-                string KodMebeli = textBoxKodMebeli.Text.Trim();
-                string Kolich = textBoxKolich.Text.Trim();
-                string Login = Settings.Default["RememberLogin"].ToString();
-                int KodKlienta = 1;
-                SqlConnection con2 = new SqlConnection(@"Data Source=DaisukiReno;Initial Catalog=MebelnayaMalyshev;Integrated Security=True");
-                con2.Open();
-                SqlCommand command = new SqlCommand("SELECT Код_пользователя FROM Пользователи WHERE Логин = @Login", con2);
-                command.Parameters.AddWithValue("@Login", Login);
-                SqlCommand command1 = new SqlCommand("SELECT * FROM Клиенты JOIN Пользователи ON Клиенты.Код_пользователя = Пользователи.Код_пользователя WHERE Код_клиента = @KodKlienta");
-                command1.Parameters.AddWithValue("@KodKlienta", KodKlienta);
-                if (KodKlienta > 0)
+                // Подключение к базе данных
+                using (SqlConnection con = new SqlConnection(@"Data Source=DaisukiReno;Initial Catalog=MebelnayaMalyshev;Integrated Security=True"))
                 {
-                    string insertquery = "INSERT INTO Заказы (Код_мебели, Код_клиента, Количество, Дата_заказа, Статус) VALUES ('" + KodMebeli + "','" + KodKlienta + "','" + Kolich + "','" + DateTime.Today.ToString("yyyy-MM-dd") +"','" + "В обработке" + "')";
-                    SqlCommand command2 = new SqlCommand(insertquery, con2);
-                    command2.ExecuteNonQuery();
-                    MessageBox.Show("Заказ добавлен!");
+                    // Запрос на получение значения поля Наличие из таблицы Мебели для заданного кода мебели
+                    string KodMebeli = textBoxKodMebeli.Text.Trim();
+                    string query = "SELECT Наличие FROM Мебели WHERE Код_мебели=@KodMebeli";
+                    using (SqlCommand command = new SqlCommand(query, con))
+                    {
+                        command.Parameters.AddWithValue("@KodMebeli", KodMebeli);
+                        con.Open();
+                        bool furnitureAvailable = (bool)command.ExecuteScalar();
+                        con.Close();
+
+                        // Если мебели нет в базе данных, выводим сообщение об ошибке
+                        if (!furnitureAvailable)
+                        {
+                            MessageBox.Show("Данная мебель отсутствует в наличии. Пожалуйста подождите, или же выберите другой заказ.");
+                            return;
+                        }
+                    }
+
+                    // Получение кода клиента по логину пользователя
+                    string Login = Settings.Default["RememberLogin"].ToString();
+                    int KodP = GetUserCode(Login);
+                    int KodKlienta = GetCustomerCode(KodP);
+
+                    // Если код клиента не найден, выводим сообщение об ошибке
+                    if (KodKlienta == 0)
+                    {
+                        MessageBox.Show("Не удалось получить код клиента.");
+                        return;
+                    }
+
+                    // Запрос на добавление заказа в таблицу Заказы
+                    string Kolich = textBoxKolich.Text.Trim();
+                    query = "INSERT INTO Заказы (Код_мебели, Код_клиента, Количество, Дата_заказа, Статус) VALUES (@KodMebeli, @KodKlienta, @Kolich, @Date, @Status)";
+                    using (SqlCommand command = new SqlCommand(query, con))
+                    {
+                        // Добавляем параметры для запроса
+                        command.Parameters.AddWithValue("@KodMebeli", KodMebeli);
+                        command.Parameters.AddWithValue("@KodKlienta", KodKlienta);
+                        command.Parameters.AddWithValue("@Kolich", Kolich);
+                        command.Parameters.AddWithValue("@Date", DateTime.Today);
+                        command.Parameters.AddWithValue("@Status", "В обработке");
+                        con.Open();
+                        // Выполняем запрос на добавление
+                        int rowsAffected = command.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Заказ добавлен!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Заказ не удалось добавить.");
+                        }
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Заказ не удалось добавить.");
-                }
-                con2.Close();
             }
             else
             {
                 MessageBox.Show("Все поля должны быть заполнены!");
             }
-
-            
         }
         //поиск информации в таблице
         private void buttonFind_Click(object sender, EventArgs e)
@@ -130,6 +163,50 @@ namespace MalyshevUP
                     {
                         dataGridView1.Rows[i].Visible = true;
                         break;
+                    }
+                }
+            }
+        }
+
+        private int GetCustomerCode(int KodP)
+        {
+            using (SqlConnection connection = new SqlConnection(@"Data Source=DaisukiReno;Initial Catalog=MebelnayaMalyshev;Integrated Security=True"))
+            {
+                connection.Open();
+                string query = "SELECT Код_клиента FROM Клиенты WHERE Код_пользователя = @KodP";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@KodP", KodP);
+                    object result = command.ExecuteScalar();
+                    if (result != DBNull.Value && result != null)
+                    {
+                        return Convert.ToInt32(result);
+                    }
+                    else
+                    {
+                        throw new Exception("Код клиента не найдена!");
+                    }
+                }
+            }
+        }
+
+        private int GetUserCode(string Login)
+        {
+            using (SqlConnection connection = new SqlConnection(@"Data Source=DaisukiReno;Initial Catalog=MebelnayaMalyshev;Integrated Security=True"))
+            {
+                connection.Open();
+                string query = "SELECT Код_пользователя FROM Пользователи WHERE Логин = @Login";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Login", Login);
+                    object result = command.ExecuteScalar();
+                    if (result != DBNull.Value && result != null)
+                    {
+                        return Convert.ToInt32(result);
+                    }
+                    else
+                    {
+                        throw new Exception("Код пользователя не найдена!");
                     }
                 }
             }
