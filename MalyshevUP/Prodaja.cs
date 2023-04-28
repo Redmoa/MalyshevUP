@@ -20,8 +20,7 @@ namespace MalyshevUP
 
         private void Prodaja_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "mebelnayaMalyshevDataSet1.Мебели". При необходимости она может быть перемещена или удалена.
-            this.мебелиTableAdapter.Fill(this.mebelnayaMalyshevDataSet1.Мебели);
+
             // TODO: данная строка кода позволяет загрузить данные в таблицу "mebelnayaMalyshevDataSet1.Заказы". При необходимости она может быть перемещена или удалена.
             this.заказыTableAdapter.Fill(this.mebelnayaMalyshevDataSet1.Заказы);
 
@@ -35,18 +34,15 @@ namespace MalyshevUP
             // Получаем код мебели из таблицы "Заказы" по коду заказа
             int furnitureCode = GetFurnitureCode(orderCode);
 
-            // Получаем количество мебели, доступной для продажи, по ее коду из таблицы "Заказы"
-            int furnitureQuantity = GetFurnitureQuantity(furnitureCode);
-
             // Получаем цену мебели по ее коду из таблицы "Мебель"
-            decimal furniturePrice = GetFurniturePrice(furnitureCode);
+            float furniturePrice = GetFurniturePrice(furnitureCode);
 
             // Вычисляем количество мебели, проданной в текущей продаже
             int quantity = GetFurnitureQuantity(furnitureCode);
 
 
             // Вычисляем общую стоимость продажи
-            decimal saleAmount = quantity * furniturePrice;
+            float saleAmount = quantity * furniturePrice;
 
             // Получаем дату продажи
             DateTime saleDate = DateTime.Today;
@@ -57,7 +53,7 @@ namespace MalyshevUP
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                string query = "INSERT INTO Продажи (КодЗаказа, КодМебели, Количество, ЦенаЗаединицу, ОбщаяЦена, ДатаПродажи) " +
+                string query = "INSERT INTO Продажи (Код_заказа, Код_мебели, Количество, Цена_за_штуку, Сумма, Дата_продажи) " +
                                "VALUES (@OrderCode, @FurnitureCode, @Quantity, @Price, @Amount, @SaleDate)";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
@@ -118,7 +114,7 @@ namespace MalyshevUP
             }
         }
 
-        private decimal GetFurniturePrice(int furnitureCode)
+        private float GetFurniturePrice(int furnitureCode)
         {
             string connectionString = @"Data Source=DaisukiReno;Initial Catalog=MebelnayaMalyshev;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -131,7 +127,7 @@ namespace MalyshevUP
                     object result = command.ExecuteScalar();
                     if (result != DBNull.Value && result != null)
                     {
-                        return Convert.ToDecimal(result);
+                        return Convert.ToSingle(result);
                     }
                     else
                     {
@@ -147,17 +143,21 @@ namespace MalyshevUP
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                string query = "SELECT Количество FROM Заказы WHERE Код_мебели = @FurnitureCode";
+                string query = "SELECT Количество FROM Мебели WHERE Код_мебели = @FurnitureCode";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@FurnitureCode", furnitureCode);
-                    int furnitureQuantity = (int)command.ExecuteScalar();
-                    return furnitureQuantity;
+                    object result = command.ExecuteScalar();
+                    if (result != DBNull.Value && result != null)
+                    {
+                        return Convert.ToInt32(result);
+                    }
+                    else
+                    {
+                        throw new Exception("Количество мебели не найдено.");
+                    }
                 }
             }
         }
-
-
-
     }
 }

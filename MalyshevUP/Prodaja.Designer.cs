@@ -39,8 +39,6 @@
             this.заказыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mebelnayaMalyshevDataSet1 = new MalyshevUP.MebelnayaMalyshevDataSet1();
             this.заказыTableAdapter = new MalyshevUP.MebelnayaMalyshevDataSet1TableAdapters.ЗаказыTableAdapter();
-            this.мебелиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.мебелиTableAdapter = new MalyshevUP.MebelnayaMalyshevDataSet1TableAdapters.МебелиTableAdapter();
             this.labelZakazy = new System.Windows.Forms.Label();
             this.buttonSale = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
@@ -49,7 +47,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mebelnayaMalyshevDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.мебелиBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -123,15 +120,6 @@
             // заказыTableAdapter
             // 
             this.заказыTableAdapter.ClearBeforeFill = true;
-            // 
-            // мебелиBindingSource
-            // 
-            this.мебелиBindingSource.DataMember = "Мебели";
-            this.мебелиBindingSource.DataSource = this.mebelnayaMalyshevDataSet1;
-            // 
-            // мебелиTableAdapter
-            // 
-            this.мебелиTableAdapter.ClearBeforeFill = true;
             // 
             // labelZakazy
             // 
@@ -208,7 +196,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mebelnayaMalyshevDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.мебелиBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,8 +213,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn количествоDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn датазаказаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn статусDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource мебелиBindingSource;
-        private MebelnayaMalyshevDataSet1TableAdapters.МебелиTableAdapter мебелиTableAdapter;
         private System.Windows.Forms.Label labelZakazy;
         private System.Windows.Forms.Button buttonSale;
         private System.Windows.Forms.Button buttonBack;

@@ -19,12 +19,15 @@ namespace MalyshevUP
 
         private void FormIzgotovitel_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "mebelnayaMalyshevDataSetIzgotovitel.Склад". При необходимости она может быть перемещена или удалена.
-            this.складTableAdapter.Fill(this.mebelnayaMalyshevDataSetIzgotovitel.Склад);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "mebelnayaMalyshevDataSetIzgotovitel.Продажи". При необходимости она может быть перемещена или удалена.
-            this.продажиTableAdapter.Fill(this.mebelnayaMalyshevDataSetIzgotovitel.Продажи);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "mebelnayaMalyshevDataSetIzgotovitel.Производство". При необходимости она может быть перемещена или удалена.
-            this.производствоTableAdapter.Fill(this.mebelnayaMalyshevDataSetIzgotovitel.Производство);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mebelnayaMalyshevDataSetUpdated.Производство". При необходимости она может быть перемещена или удалена.
+            this.производствоTableAdapter.Fill(this.mebelnayaMalyshevDataSetUpdated.Производство);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mebelnayaMalyshevDataSetUpdated.Склад". При необходимости она может быть перемещена или удалена.
+            this.складTableAdapter.Fill(this.mebelnayaMalyshevDataSetUpdated.Склад);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mebelnayaMalyshevDataSetUpdated.Продажи". При необходимости она может быть перемещена или удалена.
+            this.продажиTableAdapter.Fill(this.mebelnayaMalyshevDataSetUpdated.Продажи);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mebelnayaMalyshevDataSetUpdated.Продажи". При необходимости она может быть перемещена или удалена.
+            this.продажиTableAdapter.Fill(this.mebelnayaMalyshevDataSetUpdated.Продажи);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mebelnayaMalyshevDataSet1.Продажи". При необходимости она может быть перемещена или удалена.
 
         }
         //назад к форме авторизации

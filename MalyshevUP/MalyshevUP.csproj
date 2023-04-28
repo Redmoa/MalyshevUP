@@ -96,6 +96,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MebelnayaMalyshevDataSetIzgotovitel.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MebelnayaMalyshevDataSetUpdated.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MebelnayaMalyshevDataSetUpdated.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Prodaja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +188,17 @@
     </None>
     <None Include="MebelnayaMalyshevDataSetIzgotovitel.xss">
       <DependentUpon>MebelnayaMalyshevDataSetIzgotovitel.xsd</DependentUpon>
+    </None>
+    <None Include="MebelnayaMalyshevDataSetUpdated.xsc">
+      <DependentUpon>MebelnayaMalyshevDataSetUpdated.xsd</DependentUpon>
+    </None>
+    <None Include="MebelnayaMalyshevDataSetUpdated.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MebelnayaMalyshevDataSetUpdated.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MebelnayaMalyshevDataSetUpdated.xss">
+      <DependentUpon>MebelnayaMalyshevDataSetUpdated.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
