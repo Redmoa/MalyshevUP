@@ -39,13 +39,6 @@
             this.mebelnayaMalyshevDataSetIzgotovitel = new MalyshevUP.MebelnayaMalyshevDataSetIzgotovitel();
             this.производствоTableAdapter = new MalyshevUP.MebelnayaMalyshevDataSetIzgotovitelTableAdapters.ПроизводствоTableAdapter();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.кодпродажиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.кодзаказаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.кодмебелиDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.количествоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ценазаштукуDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.суммаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.статусDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.продажиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.продажиTableAdapter = new MalyshevUP.MebelnayaMalyshevDataSetIzgotovitelTableAdapters.ПродажиTableAdapter();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -62,6 +55,14 @@
             this.buttonProizvodstvo = new System.Windows.Forms.Button();
             this.buttonProdaja = new System.Windows.Forms.Button();
             this.buttonBackTo = new System.Windows.Forms.Button();
+            this.mebelnayaMalyshevDataSetIzgotovitelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.кодпродажиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.кодзаказаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.кодмебелиDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.количествоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ценазаштукуDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.суммаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.статусDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.производствоBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mebelnayaMalyshevDataSetIzgotovitel)).BeginInit();
@@ -69,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.продажиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.складBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mebelnayaMalyshevDataSetIzgotovitelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -153,48 +155,6 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(867, 439);
             this.dataGridView2.TabIndex = 1;
-            // 
-            // кодпродажиDataGridViewTextBoxColumn
-            // 
-            this.кодпродажиDataGridViewTextBoxColumn.DataPropertyName = "Код_продажи";
-            this.кодпродажиDataGridViewTextBoxColumn.HeaderText = "Код_продажи";
-            this.кодпродажиDataGridViewTextBoxColumn.Name = "кодпродажиDataGridViewTextBoxColumn";
-            // 
-            // кодзаказаDataGridViewTextBoxColumn
-            // 
-            this.кодзаказаDataGridViewTextBoxColumn.DataPropertyName = "Код_заказа";
-            this.кодзаказаDataGridViewTextBoxColumn.HeaderText = "Код_заказа";
-            this.кодзаказаDataGridViewTextBoxColumn.Name = "кодзаказаDataGridViewTextBoxColumn";
-            // 
-            // кодмебелиDataGridViewTextBoxColumn1
-            // 
-            this.кодмебелиDataGridViewTextBoxColumn1.DataPropertyName = "Код_мебели";
-            this.кодмебелиDataGridViewTextBoxColumn1.HeaderText = "Код_мебели";
-            this.кодмебелиDataGridViewTextBoxColumn1.Name = "кодмебелиDataGridViewTextBoxColumn1";
-            // 
-            // количествоDataGridViewTextBoxColumn
-            // 
-            this.количествоDataGridViewTextBoxColumn.DataPropertyName = "Количество";
-            this.количествоDataGridViewTextBoxColumn.HeaderText = "Количество";
-            this.количествоDataGridViewTextBoxColumn.Name = "количествоDataGridViewTextBoxColumn";
-            // 
-            // ценазаштукуDataGridViewTextBoxColumn
-            // 
-            this.ценазаштукуDataGridViewTextBoxColumn.DataPropertyName = "Цена_за_штуку";
-            this.ценазаштукуDataGridViewTextBoxColumn.HeaderText = "Цена_за_штуку";
-            this.ценазаштукуDataGridViewTextBoxColumn.Name = "ценазаштукуDataGridViewTextBoxColumn";
-            // 
-            // суммаDataGridViewTextBoxColumn
-            // 
-            this.суммаDataGridViewTextBoxColumn.DataPropertyName = "Сумма";
-            this.суммаDataGridViewTextBoxColumn.HeaderText = "Сумма";
-            this.суммаDataGridViewTextBoxColumn.Name = "суммаDataGridViewTextBoxColumn";
-            // 
-            // статусDataGridViewTextBoxColumn
-            // 
-            this.статусDataGridViewTextBoxColumn.DataPropertyName = "Статус";
-            this.статусDataGridViewTextBoxColumn.HeaderText = "Статус";
-            this.статусDataGridViewTextBoxColumn.Name = "статусDataGridViewTextBoxColumn";
             // 
             // продажиBindingSource
             // 
@@ -334,6 +294,53 @@
             this.buttonBackTo.UseVisualStyleBackColor = true;
             this.buttonBackTo.Click += new System.EventHandler(this.buttonBackTo_Click);
             // 
+            // mebelnayaMalyshevDataSetIzgotovitelBindingSource
+            // 
+            this.mebelnayaMalyshevDataSetIzgotovitelBindingSource.DataSource = this.mebelnayaMalyshevDataSetIzgotovitel;
+            this.mebelnayaMalyshevDataSetIzgotovitelBindingSource.Position = 0;
+            // 
+            // кодпродажиDataGridViewTextBoxColumn
+            // 
+            this.кодпродажиDataGridViewTextBoxColumn.DataPropertyName = "Код_продажи";
+            this.кодпродажиDataGridViewTextBoxColumn.HeaderText = "Код_продажи";
+            this.кодпродажиDataGridViewTextBoxColumn.Name = "кодпродажиDataGridViewTextBoxColumn";
+            // 
+            // кодзаказаDataGridViewTextBoxColumn
+            // 
+            this.кодзаказаDataGridViewTextBoxColumn.DataPropertyName = "Код_заказа";
+            this.кодзаказаDataGridViewTextBoxColumn.HeaderText = "Код_заказа";
+            this.кодзаказаDataGridViewTextBoxColumn.Name = "кодзаказаDataGridViewTextBoxColumn";
+            // 
+            // кодмебелиDataGridViewTextBoxColumn1
+            // 
+            this.кодмебелиDataGridViewTextBoxColumn1.DataPropertyName = "Код_мебели";
+            this.кодмебелиDataGridViewTextBoxColumn1.HeaderText = "Код_мебели";
+            this.кодмебелиDataGridViewTextBoxColumn1.Name = "кодмебелиDataGridViewTextBoxColumn1";
+            // 
+            // количествоDataGridViewTextBoxColumn
+            // 
+            this.количествоDataGridViewTextBoxColumn.DataPropertyName = "Количество";
+            this.количествоDataGridViewTextBoxColumn.HeaderText = "Количество";
+            this.количествоDataGridViewTextBoxColumn.Name = "количествоDataGridViewTextBoxColumn";
+            // 
+            // ценазаштукуDataGridViewTextBoxColumn
+            // 
+            this.ценазаштукуDataGridViewTextBoxColumn.DataPropertyName = "Цена_за_штуку";
+            this.ценазаштукуDataGridViewTextBoxColumn.HeaderText = "Цена_за_штуку";
+            this.ценазаштукуDataGridViewTextBoxColumn.Name = "ценазаштукуDataGridViewTextBoxColumn";
+            // 
+            // суммаDataGridViewTextBoxColumn
+            // 
+            this.суммаDataGridViewTextBoxColumn.DataPropertyName = "Сумма";
+            this.суммаDataGridViewTextBoxColumn.HeaderText = "Сумма";
+            this.суммаDataGridViewTextBoxColumn.Name = "суммаDataGridViewTextBoxColumn";
+            // 
+            // статусDataGridViewTextBoxColumn
+            // 
+            this.статусDataGridViewTextBoxColumn.DataPropertyName = "Статус";
+            this.статусDataGridViewTextBoxColumn.HeaderText = "Статус";
+            this.статусDataGridViewTextBoxColumn.Name = "статусDataGridViewTextBoxColumn";
+            // 
             // FormIzgotovitel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -363,6 +370,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.продажиBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.складBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mebelnayaMalyshevDataSetIzgotovitelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -382,13 +390,6 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.BindingSource продажиBindingSource;
         private MebelnayaMalyshevDataSetIzgotovitelTableAdapters.ПродажиTableAdapter продажиTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn кодпродажиDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn кодзаказаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn кодмебелиDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn количествоDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ценазаштукуDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn суммаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn статусDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.BindingSource складBindingSource;
         private MebelnayaMalyshevDataSetIzgotovitelTableAdapters.СкладTableAdapter складTableAdapter;
@@ -403,5 +404,13 @@
         private System.Windows.Forms.Button buttonProizvodstvo;
         private System.Windows.Forms.Button buttonProdaja;
         private System.Windows.Forms.Button buttonBackTo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn кодпродажиDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn кодзаказаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn кодмебелиDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn количествоDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ценазаштукуDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn суммаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn статусDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource mebelnayaMalyshevDataSetIzgotovitelBindingSource;
     }
 }
