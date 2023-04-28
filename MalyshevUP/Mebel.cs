@@ -30,17 +30,24 @@ namespace MalyshevUP
         //добавление записи в таблицу производство
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            string KodM = textBoxKodM.Text.Trim();
-            string KodI = textBoxKodI.Text.Trim();
-            string DateN = textBoxDateN.Text.Trim();
-            string DateO = textBoxDateO.Text.Trim();
+            if (textBoxKodM.Text != "" && textBoxKodI.Text != "" && textBoxDateN.Text != "" && textBoxDateO.Text != "")
+            {
+                string KodM = textBoxKodM.Text.Trim();
+                string KodI = textBoxKodI.Text.Trim();
+                string DateN = textBoxDateN.Text.Trim();
+                string DateO = textBoxDateO.Text.Trim();
 
-            SqlConnection con = new SqlConnection(@"Data Source=DaisukiReno;Initial Catalog=MebelnayaMalyshev;Integrated Security=True");
-            con.Open();
-            string insertquery = "INSERT INTO Производство (Код_мебели, Код_изготовителя, Дата_начала, Дата_окончания) VALUES ('" + KodM + "','" + KodI + "','" + DateN + "','" + DateO+ "')";
-            SqlCommand cmd2 = new SqlCommand(insertquery, con);
-            cmd2.ExecuteNonQuery();
-            MessageBox.Show("Информация добавлена!");
+                SqlConnection con = new SqlConnection(@"Data Source=DaisukiReno;Initial Catalog=MebelnayaMalyshev;Integrated Security=True");
+                con.Open();
+                string insertquery = "INSERT INTO Производство (Код_мебели, Код_изготовителя, Дата_начала, Дата_окончания) VALUES ('" + KodM + "','" + KodI + "','" + DateN + "','" + DateO+ "')";
+                SqlCommand cmd2 = new SqlCommand(insertquery, con);
+                cmd2.ExecuteNonQuery();
+                MessageBox.Show("Информация добавлена!");
+            }
+            else
+            {
+                MessageBox.Show("Все поля должны быть заполнены!");
+            }
         }
         //открывает календарь по нажатию на текстбокс
         private void textBoxDateN_Enter(object sender, EventArgs e)

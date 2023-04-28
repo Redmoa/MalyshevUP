@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Security.Principal;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using MalyshevUP.Properties;
 
 namespace MalyshevUP
 {
-    public partial class FormAuthorization : System.Windows.Forms.Form
+    public partial class FormAuthorization : System.Windows.Forms.Form 
     {
         public FormAuthorization()
         {
@@ -41,6 +43,8 @@ namespace MalyshevUP
                     //вход к формам, в зависимости от ролей
                     if (User_Role == "Изготовитель")
                     {
+                        Settings.Default["RememberLogin"] = textBoxLogin.Text;
+                        Settings.Default.Save();
                         FormIzgotovitel frm = new FormIzgotovitel();
                         //frm2.button4.Visible = false;
                         frm.Show();
@@ -50,6 +54,8 @@ namespace MalyshevUP
                     }
                     else if (User_Role == "Покупатель")
                     {
+                        Settings.Default["RememberLogin"] = textBoxLogin.Text;
+                        Settings.Default.Save();
                         FormPokupatel frm2 = new FormPokupatel();
                         frm2.Show();
                         this.Hide();

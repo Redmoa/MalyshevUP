@@ -30,16 +30,23 @@ namespace MalyshevUP
         //кнопка добавления
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            string KodKomp = textBoxKodKomp.Text.Trim();
-            string KolvoKomp = textBoxKolvoKomp.Text.Trim();
-            string DateKomp = textBoxDate.Text.Trim();
+            if (textBoxKodKomp.Text != "" && textBoxKolvoKomp.Text != "" && textBoxKolvoKomp.Text != "")
+            {
+                string KodKomp = textBoxKodKomp.Text.Trim();
+                string KolvoKomp = textBoxKolvoKomp.Text.Trim();
+                string DateKomp = textBoxDate.Text.Trim();
 
-            SqlConnection con = new SqlConnection(@"Data Source=DaisukiReno;Initial Catalog=MebelnayaMalyshev;Integrated Security=True");
-            con.Open();
-            string insertquery = "INSERT INTO Склад (Код_комплектующего, Количество, Дата_поступления) VALUES ('" + KodKomp + "','" + KolvoKomp + "','" + DateKomp + "')";
-            SqlCommand cmd2 = new SqlCommand(insertquery, con);
-            cmd2.ExecuteNonQuery();
-            MessageBox.Show("Информация добавлена!");
+                SqlConnection con = new SqlConnection(@"Data Source=DaisukiReno;Initial Catalog=MebelnayaMalyshev;Integrated Security=True");
+                con.Open();
+                string insertquery = "INSERT INTO Склад (Код_комплектующего, Количество, Дата_поступления) VALUES ('" + KodKomp + "','" + KolvoKomp + "','" + DateKomp + "')";
+                SqlCommand cmd2 = new SqlCommand(insertquery, con);
+                cmd2.ExecuteNonQuery();
+                MessageBox.Show("Информация добавлена!");
+            }
+            else
+            {
+                MessageBox.Show("Все поля должны быть заполнены!");
+            }
         }
         //при нажатии на текстбокс должен открыться календарь
         private void textBoxDate_Enter(object sender, EventArgs e)
