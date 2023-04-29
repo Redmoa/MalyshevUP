@@ -217,7 +217,7 @@
             // 
             this.monthCalendar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.monthCalendar1.Location = new System.Drawing.Point(691, 27);
-            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(10);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 13;
             this.monthCalendar1.Visible = false;
@@ -252,6 +252,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MinimumSize = new System.Drawing.Size(949, 524);
             this.Name = "Sklad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Поступление на склад";
