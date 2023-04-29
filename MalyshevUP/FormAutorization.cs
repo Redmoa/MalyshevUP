@@ -46,7 +46,6 @@ namespace MalyshevUP
                         Settings.Default["RememberLogin"] = textBoxLogin.Text;
                         Settings.Default.Save();
                         FormIzgotovitel frm = new FormIzgotovitel();
-                        //frm2.button4.Visible = false;
                         frm.Show();
                         this.Hide();
 
